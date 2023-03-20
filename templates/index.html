@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Placement Predictor</title>
+</head>
+<body>
+
+    <h1>Student Placement Predictor</h1>
+    {% if result %}
+        <p>{{ result }}</p>
+    {% endif %}
+    <form method="POST" action="/predict">
+        <label>Age</label><br>
+        <input type="text" name="Age"><br><br>
+
+        <label>BloodPressure</label><br>
+        <input type="text" name="BloodPressure"><br><br>
+
+        <label>Insulin</label><br>
+        <input type="text" name="Insulin"><br><br>
+
+        <label>BMI</label><br>
+        <input type="text" name="BMI"><br><br>
+
+        <label>Glucose</label><br>
+        <input type="text" name="Glucose"><br><br>
+
+        <input type="submit" value="Predict"><br><br>
+    </form>
+
+</body>
+</html>
