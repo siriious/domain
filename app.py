@@ -25,5 +25,5 @@ def predict_diabetes():
     else:
         return "<h1 style='color:red'>Person is not Suffering from Diabetes Disease</h1>"
 
-app.run(debug=True)
+
 
